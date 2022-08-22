@@ -50,7 +50,6 @@ header {
     top: 0;
     width: 100vw;
     z-index: 10;
-
     grid-area: header;
 }
 

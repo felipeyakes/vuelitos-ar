@@ -16,10 +16,7 @@
         <header>
 
             <a href="index.html"><img src="./img/logo.png" alt="Logo vuelitos.ar" class="logo-header"></a>
-
             <nav class="head-nav">
-            
-                <img src="./img/menu-burger.svg" alt="" class="menu-burger">
 
                 <li><a href="./index.html">Inicio</a></li>
                 <li><a href="./pages/paseos.html">Paseos</a></li>
@@ -28,6 +25,46 @@
                 <li><a href="./pages/contacto.html">Contacto</a></li>
                 <li><a href="./pages/ubicacion.html">Ubicación</a></li>
             </nav>
+
+            <div class="nav-responsive">
+                <nav class="navbar bg-secondary fixed-top">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="index.html"><img src="./img/logo.png" alt="Logo vuelitos.ar" class="logo-header"></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="./pages/paseos.html">Paseos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/faq.html">Preguntas Frecuentes</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="./pages/reservar.html">Reservar</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="./pages/ubicacion.html">Ubicación</a>
+                              </li>
+                          </ul>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
 
         </header>
 
@@ -39,7 +76,7 @@
             <!-- Presentación principal -->
             <article>
                 <h1>¿Te gusta volar? ¿Querés volar por primera vez?</h1>
-                <p>En vuelitos.ar vas a poder conocer lugares de la Provincia de Buenos Aires desde el aire, llevándote un recuerdo inolvidable.</p>
+                <p>Con vuelitos.ar vas a poder conocer lugares de la Provincia de Buenos Aires desde el aire, llevándote un recuerdo inolvidable.</p>
                 <p>Los vuelos se realizan con aviones Cessna 150, un avión biplaza, monomotor, el cual está preparado para llevar a cabo vuelos cortos, con total seguridad.</p>
                 <p>Nuestros vuelos salen desde el Aeródromo de Morón, el aeropuerto con más movimiento del país.</p>
             </article>

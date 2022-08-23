@@ -7,7 +7,7 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 .contenedor {
@@ -37,7 +37,7 @@ main article, h1, h3{
 /* Configuración de tipografías */
 
 body{
-    font-family: Oxygen, sans-serif;
+    font-family: Oxygen, sans-serif !important;
 }
 
 /* Configuración de header */
@@ -56,7 +56,7 @@ header {
 /* Configuración del logo del header */
 
 .logo-header {
-    padding: 20px;
+    padding: 14px;
     width: 250px;
     display: flex;
 }
@@ -68,10 +68,6 @@ header {
     align-items: center;
 }
 
-.menu-burger {
-    width: 35px;   
-    margin-right: 35px;
-}
 
 .head-nav li {
     padding-left: 20px;
@@ -160,7 +156,7 @@ footer a {
 
 .por-que-vuelitosar {
     width: 330px;
-    height: 380px;
+    height: 465px;
     background-color: #62d4e6;
     border-radius: 5px;
     color: #000000;
@@ -204,7 +200,7 @@ footer a {
 
 .imagen-porqueelegir {
     width: 100vw;
-    height: 450px;
+    height: 550px;
     object-fit: cover;
 }
 
@@ -216,7 +212,7 @@ footer a {
     margin-bottom: 20px;
     text-align: center;
     width: 100vw;
-    height: 200px;
+    height: 230px;
     display: flex;
     flex-direction: column;
 }
@@ -242,6 +238,13 @@ footer a {
 
 .icon-container {
     display: flex;
+    justify-items: center;
+}
+
+.icon-container img {
+    width: 30px;
+    height: 30px;
+    margin-right: 6px;
 }
 
 .paseos-cards {
@@ -460,7 +463,13 @@ footer a {
     margin-bottom: 40px;
 }
 
-@media screen and (min-width: 1200px) {
+/* PREGUNTAS FRECUENTES Tarjetas de preguntas */
+
+.accordion {
+    margin: 30px;
+}
+
+@media screen and (min-width: 1030px) {
     .contenedor {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
@@ -469,13 +478,9 @@ footer a {
         width: 350px;
     }
 
-    .menu-burger {
-        display: none;
-    }
-
     .por-que-vuelitosar {
         width: 500px;
-        height: 320px;
+        height: 350px;
     }
 
     .regala-vuelo a {
@@ -574,12 +579,36 @@ footer a {
         margin-bottom: 40px;
     }
 
-    .boton-galeria:hover, .regala-vuelo a:hover, .button-nuestros-paseos:hover, .paseos-button:hover, .button-reservar:hover {
+    .boton-galeria:hover, .button-nuestros-paseos:hover, .paseos-button:hover, .button-reservar:hover {
         filter: brightness(80%);
+        color: #000000;
+    }
+
+    .regala-vuelo a:hover {
+        filter: brightness(80%);
+        color: #ffffff;
     }
 
     .head-nav a:hover {
         filter:brightness(10%);
+        color: #000000;
+    }
+
+
+}
+
+@media screen and (min-width: 700px) {
+    
+    .nav-responsive {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    
+    .head-nav {
+        display: none;
     }
 
 }

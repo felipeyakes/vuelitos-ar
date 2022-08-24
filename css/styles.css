@@ -10,23 +10,7 @@
     text-decoration: none !important;
 }
 
-.contenedor {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 100px auto auto;
-
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer"
-    ;
-}
-
 /* Configuración para separar el texto de todas las páginas de los bordes */
-
-main {
-    grid-area: main;
-}
 
 
 main article, h1, h3{
@@ -50,7 +34,6 @@ header {
     top: 0;
     width: 100vw;
     z-index: 10;
-    grid-area: header;
 }
 
 /* Configuración del logo del header */
@@ -86,10 +69,6 @@ footer {
     margin-top: 40px;
     width: 100vw;
     color: #ffffff;
-
-    grid-area: footer;
-    display: grid;
-    grid-template-columns: 1fr;
 }
 
 
@@ -374,7 +353,6 @@ footer a {
 /* Sección de imagen y mapas */
 
 .mapa {
-    display: grid;
     align-items: center;
     justify-content: space-around;
     margin-top: 30px;
@@ -470,10 +448,6 @@ footer a {
 }
 
 @media screen and (min-width: 1030px) {
-    .contenedor {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-
     .logo-header {
         width: 350px;
     }
@@ -487,11 +461,6 @@ footer a {
         font-size: 20pt;
     }
 
-    footer {
-        grid-area: footer;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
 
     .paseos {
         width: 450px;

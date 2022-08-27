@@ -415,6 +415,17 @@ footer a {
     margin-top: 30px;
 }
 
+/* PASEOS / REGALOS Animación para que se amplíe la imágen de las tarjetas de paseos al pasar el mouse sobre ella */
+
+.hover-zoom {
+    transition: transform 0.2s;
+}
+
+.hover-zoom:hover {
+    transform: scale(1.07);
+
+}
+
 /* GALERÍA Botón para reservar */
 
 .conv-galeria {

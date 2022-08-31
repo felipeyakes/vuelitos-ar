@@ -1,0 +1,35 @@
+/* Configuración del footer */
+
+footer {
+    background-color: $colorfooterandheader;
+    margin-top: 40px;
+    width: 100vw;
+    color: #ffffff;
+
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+/* Configuración del nav en el footer */
+
+.footer-info {
+    margin-top: 60px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    font-size: 15pt;
+}
+
+/* Configuración de los títulos de los navs del footer */
+
+.titulo-footer {
+    font-weight: bold;
+}
+
+/* Configuración de los ítems del nav del footer */
+
+footer a {
+    color: rgb(255, 255, 255);
+}

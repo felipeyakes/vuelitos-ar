@@ -1,0 +1,20 @@
+/* Configuración de header */
+
+header {
+    background-color: $colorfooterandheader;
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    z-index: 10;
+    grid-area: header;
+}
+
+/* Configuración del logo del header */
+
+.logo-header {
+    padding: 14px;
+    width: 250px;
+    display: flex;
+}

@@ -1,0 +1,16 @@
+/* Configuración del nav en el header */
+
+.head-nav {
+    display: flex;
+    align-items: center;
+
+    li {
+        padding-left: 20px;
+        font-size: 15pt;
+    }
+
+    a {
+        color: #ffffff;
+    }
+}
+ 

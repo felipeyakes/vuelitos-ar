@@ -1,0 +1,11 @@
+@mixin button-conoceNuestrosPaseos ($color-black){
+    background: rgb(246, 195, 28);
+    padding: 10px 30px;
+    color: $color-black;
+    font-size: 15pt;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}

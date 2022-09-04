@@ -1,6 +1,15 @@
 /* variables */
 @import "variables";
 
+/* maps */
+@import "maps";
+
+/* mixins */
+@import "mixins";
+
+/* extends */
+@import "extends";
+
 /* partials */
 @import "generales";
 @import "navbar";
@@ -12,15 +21,7 @@
 /* INDEX Botón "Conocé nuestros paseos" */
 
 .button-nuestros-paseos {
-    background: rgb(246, 195, 28);
-    padding: 10px 30px;
-    color: $color-black;
-    font-size: 15pt;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    @include button-conoceNuestrosPaseos ($color-black);
 }
 
 /* INDEX Sección "¿Por qué elegir vuelitos.ar? */
@@ -28,10 +29,10 @@
 .por-que-vuelitosar {
     width: 330px;
     height: 465px;
-    background-color: #62d4e6;
-    border-radius: 5px;
+    background-color: map-get($styles, bgColor-pqvar);
+    border-radius: map-get($styles, bRadius-pqvar);
     color: $color-black;
-    position: absolute;
+    position: map-get($styles, position-pqvar);
     top: 10%;
     left: 5%;
     transform: translate(-20%, -20);
@@ -221,13 +222,7 @@
 /* PASEOS Sección tarjetas de paseos botón de reservar */
 
 .button-reservar {
-    background: rgb(246, 195, 28);
-    border-radius: 10px;
-    padding: 10px 30px;
-    color: $color-black;
-    font-size: 12pt;
-    font-weight: bold;
-    margin-left: 30px;
+    @extend %botonPaseosReservar
 }
 
 .link-reserva {

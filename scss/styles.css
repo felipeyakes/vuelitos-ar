@@ -1,0 +1,528 @@
+@charset "UTF-8";
+/* variables */
+/* partials */
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: Oxygen, sans-serif;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+/* Configuración para separar el texto de todas las páginas de los bordes */
+main {
+  grid-area: main;
+}
+main article, main h1, main h3 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* Configuración de los banners principales en cada página del sitio */
+.banner-pags {
+  width: 100vw;
+}
+
+/* Configuración de los H1 */
+h1 {
+  text-align: center;
+  font-size: 30pt;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+/* Configuración de los article */
+main article {
+  text-align: center;
+  font-size: 20pt;
+}
+
+/* Configuración del nav en el header */
+.head-nav {
+  display: flex;
+  align-items: center;
+}
+.head-nav li {
+  padding-left: 20px;
+  font-size: 15pt;
+}
+.head-nav a {
+  color: #ffffff;
+}
+
+/* Configuración del footer */
+footer {
+  background-color: #6d6b6b;
+  margin-top: 40px;
+  width: 100vw;
+  color: #ffffff;
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/* Configuración del nav en el footer */
+.footer-info {
+  margin-top: 60px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 50px;
+  font-size: 15pt;
+}
+
+/* Configuración de los títulos de los navs del footer */
+.titulo-footer {
+  font-weight: bold;
+}
+
+/* Configuración de los ítems del nav del footer */
+footer a {
+  color: rgb(255, 255, 255);
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px auto auto;
+  grid-template-areas: "header" "main" "footer";
+}
+
+/* Configuración de header */
+header {
+  background-color: #6d6b6b;
+  display: flex;
+  justify-content: space-around;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  z-index: 10;
+  grid-area: header;
+}
+
+/* Configuración del logo del header */
+.logo-header {
+  padding: 14px;
+  width: 250px;
+  display: flex;
+}
+
+/* INDEX Botón "Conocé nuestros paseos" */
+.button-nuestros-paseos {
+  background: rgb(246, 195, 28);
+  padding: 10px 30px;
+  color: #000000;
+  font-size: 15pt;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* INDEX Sección "¿Por qué elegir vuelitos.ar? */
+.por-que-vuelitosar {
+  width: 330px;
+  height: 465px;
+  background-color: #62d4e6;
+  border-radius: 5px;
+  color: #000000;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  transform: translate(-20%, -20);
+}
+
+/* INDEX Sección ¿Por qué elegir vuelitos.ar? */
+.por-que-vuelitosar li {
+  margin: 20px;
+  font-size: 14pt;
+}
+.por-que-vuelitosar h2 {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 23pt;
+}
+.por-que-vuelitosar li {
+  list-style-type: "✔️";
+  margin-left: 40px;
+}
+
+/* INDEX Sección ¿Por qué elegir vuelitos.ar? Div con rectangulo celeste sobre imagen */
+.por-que-elegir {
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+}
+
+/* INDEX Sección ¿Por qué elegir vuelitos.ar? Imagen */
+.imagen-porqueelegir {
+  width: 100vw;
+  height: 550px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* INDEX Sección Regalá un vuelo  */
+.regala-vuelo {
+  background-color: rgb(246, 195, 28);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100vw;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+}
+.regala-vuelo h2 {
+  margin-top: 15px;
+  font-size: 30pt;
+}
+.regala-vuelo p {
+  font-size: 20pt;
+  margin: 20px;
+}
+.regala-vuelo a {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px 40px;
+  font-size: 13pt;
+}
+
+/* PASEOS Sección Tarjetas de paseos  */
+.icon-container {
+  display: flex;
+  justify-items: center;
+}
+.icon-container img {
+  width: 30px;
+  height: 30px;
+  margin-right: 6px;
+}
+
+.paseos-cards {
+  display: flex;
+  gap: 10px;
+  width: 100vw;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.paseos {
+  width: 320px;
+  height: 500px;
+  background-color: #696969;
+  border-radius: 5px;
+  color: #ffffff;
+}
+.paseos img {
+  width: 300px;
+  border-radius: 2%;
+}
+
+.head-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.head-card h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 15pt;
+}
+
+/* PASEOS Sección tarjetas de paseos rectangulos de información */
+.rectangulo-info {
+  display: flex;
+}
+.rectangulo-info h3 {
+  padding: 5px;
+  background: rgba(122, 254, 93, 0.6784313725);
+  border-radius: 30px;
+  margin: 5px;
+}
+
+.CSI {
+  padding: 5px;
+  background: rgba(122, 254, 93, 0.6784313725);
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+/* PASEOS Sección tarjetas de paseos Botón de "Ver Más" */
+.paseos-button {
+  background: rgba(246, 195, 28, 0.729);
+  border-radius: 10px;
+  padding: 10px 30px;
+  color: #000000;
+  font-size: 12pt;
+  font-weight: bold;
+}
+
+/* PASEOS Sección tarjetas de paseos Información del paseo dentro de la tarjeta */
+.info-card {
+  text-align: center;
+}
+.info-card p {
+  margin-bottom: 30px;
+}
+
+.pre-foot-paseos {
+  text-align: center;
+}
+
+/* PASEOS Link a galería de imágenes */
+.link-galeria {
+  text-align: center;
+  font-size: 25pt;
+  font-weight: bold;
+  margin-top: 35px;
+  margin-bottom: 30px;
+}
+
+.boton-galeria {
+  background: #450fd9;
+  border-radius: 10px;
+  padding: 10px 30px;
+  color: #ffffff;
+  font-size: 25pt;
+  font-weight: bold;
+}
+
+.pre-foot-paseos h3 {
+  margin-top: 40px;
+}
+
+.pre-foot-paseos p {
+  margin-top: 20px;
+}
+
+/* PASEOS Sección tarjetas de paseos botón de reservar */
+.button-reservar {
+  background: rgb(246, 195, 28);
+  border-radius: 10px;
+  padding: 10px 30px;
+  color: #000000;
+  font-size: 12pt;
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+.link-reserva {
+  color: rgb(246, 195, 28);
+}
+
+/* Sección de imagen y mapas */
+.mapa {
+  display: grid;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.mapa img {
+  width: 320px;
+  margin: 10px;
+}
+
+/* PASEOS (Páginas individuales de cada paseo) Descripción principal del paseo */
+.desc-prin-paseo {
+  margin-bottom: 40px;
+}
+
+/* PASEOS (Páginas individuales de cada paseo) Imagen de la ruta a llevar */
+.ruta-llevaremos img {
+  width: 300px;
+  margin-top: 30px;
+}
+
+/* PASEOS (Páginas individuales de cada paseo) Botón de reservar */
+.button-reservar-conv {
+  background: rgb(246, 195, 28);
+  border-radius: 10px;
+  padding: 10px 30px;
+  color: #000000;
+  font-size: 20pt;
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+.P-button-reservar-conv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+/* PASEOS / REGALOS Animación para que se amplíe la imágen de las tarjetas de paseos al pasar el mouse sobre ella */
+.hover-zoom {
+  transition: transform 0.2s;
+}
+.hover-zoom:hover {
+  transform: scale(1.07);
+}
+
+/* GALERÍA Botón para reservar */
+.conv-galeria {
+  margin-top: 30px;
+}
+
+/* PASEOS Texto de paseos personalizados */
+.personalizar-paseo {
+  margin-top: 30px;
+}
+
+/* REGALOS id para subtítulos de la página */
+#italic-regalar {
+  font-style: italic;
+  font-size: 20pt;
+}
+
+#bold-regalar {
+  font-weight: bold;
+  font-size: 25pt;
+}
+
+/* REGALOS Background */
+.main-regalos {
+  background-image: url(../img/background.png);
+  background-size: contain;
+}
+
+/* REGALOS Ejemplo voucher regalo */
+.voucher-regalo {
+  margin-top: 30px;
+  margin-bottom: 60px;
+  width: 300px;
+  box-shadow: 0 0 15px #000000;
+}
+
+/* REGALOS Paseos */
+.nuestras-opciones {
+  margin-bottom: 40px;
+}
+
+/* PREGUNTAS FRECUENTES Tarjetas de preguntas */
+.accordion {
+  margin: 30px;
+}
+
+.carrousel-galeria {
+  width: 800px;
+  box-shadow: 0 0 15px #000000;
+}
+
+@media screen and (min-width: 1030px) {
+  .contenedor {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .logo-header {
+    width: 350px;
+  }
+  .por-que-vuelitosar {
+    width: 500px;
+    height: 350px;
+  }
+  .regala-vuelo a {
+    font-size: 20pt;
+  }
+  footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .paseos {
+    width: 450px;
+    height: 560px;
+  }
+  .paseos img {
+    width: 400px;
+  }
+  .head-card h2 {
+    font-size: 22pt;
+  }
+  .paseos-button {
+    font-size: 15pt;
+  }
+  .button-reservar {
+    font-size: 15pt;
+  }
+  /* UBICACIÓN Mapa de la ubicación */
+  .mapa1 {
+    height: 350px;
+    width: 600px;
+  }
+  .mapa2 {
+    background: none;
+    height: 350px;
+    width: 600px;
+  }
+  /* Sección de imagen y mapas */
+  .mapa {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+  .mapa img {
+    width: 525px;
+  }
+  .ruta-llevaremos img {
+    width: 700px;
+    margin-top: 30px;
+  }
+  /* REGALOS id para subtítulos de la página */
+  #italic-regalar {
+    font-style: italic;
+    font-size: 25pt;
+  }
+  #bold-regalar {
+    font-weight: bold;
+    font-size: 30pt;
+  }
+  /* REGALOS Background */
+  .main-regalos {
+    background-image: url(../img/background.png);
+    background-size: cover;
+  }
+  /* REGALOS Ejemplo voucher regalo */
+  .voucher-regalo {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    width: 500px;
+    box-shadow: 0 0 15px #000000;
+  }
+  /* REGALOS Paseos */
+  .nuestras-opciones {
+    margin-bottom: 40px;
+  }
+  .boton-galeria:hover, .button-nuestros-paseos:hover, .paseos-button:hover, .button-reservar:hover {
+    filter: brightness(80%);
+    color: #000000;
+  }
+  .regala-vuelo a:hover {
+    filter: brightness(80%);
+    color: #ffffff;
+  }
+  .head-nav a:hover {
+    filter: brightness(10%);
+    color: #000000;
+  }
+}
+@media screen and (min-width: 700px) {
+  .nav-responsive {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  .head-nav {
+    display: none;
+  }
+}/*# sourceMappingURL=styles.css.map */
